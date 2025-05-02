@@ -474,6 +474,8 @@ body._lock {
   transform: translate(0, 40px);
   transition: all 0.3s ease;
   max-width: 300px;
+  z-index: 10;
+  background: var(--white);
 }
 
 .teamleader-area-links__item {
