@@ -659,7 +659,7 @@ body._lock {
 .teamleader-area-table__body {
   padding-top: 100px;
   margin-top: -92px;
-  max-height: 80vh;
+  max-height: calc(80vh + 100px);
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: #D1D1D1 #fff;
