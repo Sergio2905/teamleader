@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250502113249" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js?_v=20250502113249"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Teamleader area</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <div class="page">
+
+            <div class="teamleader-area">
+                <div class="teamleader-area__container container">
+                    <div class="teamleader-area__header">
+                        <h1 class="teamleader-area__title">Команда</h1>
+                        <p class="teamleader-area__text">5 из 8 показателей соответствуют ожиданиям</p>
+                    </div>
+                    <div class="teamleader-area__filter">
+                        <select data-placeholder="Год" class="chosen-select">
+                            <option value="" selected>ФГ2024</option>
+                            <option value="">ФГ2023</option>
+                            <option value="">ФГ2022</option>
+                            <option value="">ФГ2021</option>
+                            <option value="">ФГ2020</option>
+                        </select>
+                        <select data-placeholder="Статус сотрудника" multiple class="chosen-select">
+                            <option value="" selected>Активные сотрудники</option>
+                            <option value="">В длительном отпуске</option>
+                            <option value="">Уволенные</option>
+                        </select>
+                        <select data-placeholder="Имя сотрудника" class="chosen-select">
+                            <option value="" selected>Павел Солодовников (я)</option>
+                            <option value="">Татьяна Соколова</option>
+                            <option value="">Петр Тарасов</option>
+                            <option value="">Людмила Шихова</option>
+                        </select>
+                        <select data-placeholder="Уровень сотрудника" class="chosen-select">
+                            <option value="">???</option>
+                            <option value="">???</option>
+                            <option value="">???</option>
+                            <option value="">???</option>
+                        </select>
+                        <div class="teamleader-area__links teamleader-area-links">
+                            <button type="button" class="teamleader-area-links__btn">
+                                Полезные ссылки
+                                <svg>
+                                    <use href="img/icons/icons.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <div class="teamleader-area-links__body">
+                                <a href="#" class="teamleader-area-links__item">Ресурсное планирование</a>
+                                <a href="#" class="teamleader-area-links__item">ELMA</a>
+                                <a href="#" class="teamleader-area-links__item">HRM</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamleader-area__cards teamleader-area-cards">
+                        <div class="teamleader-area-cards__item teamleader-area-cards__item_orange">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Заполнение табеля</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon1.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">6</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. заполнили вовремя</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn" data-modal="table">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Утилизация</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon2.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. равна или выше цели</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn" data-modal="util">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Обучение</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon3.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. прошли и запланировали</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item teamleader-area-cards__item_red">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Цели и план развития</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon4.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. согласовали цели/итоги</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn" data-modal="targets">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Обратная связь</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon5.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. в норме</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn" data-modal="feedback">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Остаток отпуска</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon6.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. в норме</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn" data-modal="rest">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item teamleader-area-cards__item_orange">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Удержание</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon7.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">9</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. продолжают работать</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="teamleader-area-cards__item">
+                            <div class="teamleader-area-cards__wrapper">
+                                <div class="teamleader-area-cards__front">
+                                    <div class="teamleader-area-cards__header">
+                                        <h2 class="teamleader-area-cards__title">Пересмотр зарплаты</h2>
+                                        <div class="teamleader-area-cards__icon">
+                                            <img src="img/cards/icon8.svg" alt="Icon">
+                                        </div>
+                                    </div>
+                                    <div class="teamleader-area-cards__body">
+                                        <div class="teamleader-area-cards__values">
+                                            <span class="teamleader-area-cards__current">7</span>
+                                            из
+                                            <span class="teamleader-area-cards__max">7</span>
+                                        </div>
+                                        <div class="teamleader-area-cards__text">чел. получили пересмотр</div>
+                                    </div>
+                                    <div class="teamleader-area-cards__progress"></div>
+                                </div>
+                                <div class="teamleader-area-cards__back">
+                                    <p class="teamleader-area-cards__desc">
+                                        Все сотрудники должны своевременно заполнять табели учета рабочего времени в
+                                        ELMA
+                                    </p>
+                                    <button type="button" class="teamleader-area-cards__btn">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#link"></use>
+                                        </svg>
+                                        Подробнее
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teamleader-area__body">
+                        <div class="teamleader-area__table teamleader-area-table">
+                            <h2 class="teamleader-area-table__title">Показатели сотрудников</h2>
+                            <div class="teamleader-area-table__body">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td>
+                                                <button type="button" class="teamleader-area-table__sort" title="sort">
+                                                    <svg>
+                                                        <use href="img/icons/icons.svg#arrow2"></use>
+                                                    </svg>
+                                                </button>
+                                                <span>Сотрудник</span>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="teamleader-area-table__sort" title="sort">
+                                                    <svg>
+                                                        <use href="img/icons/icons.svg#arrow2"></use>
+                                                    </svg>
+                                                </button>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon1"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Заполнение табеля
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon2"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Утилизация
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Обучение
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon4"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Цели и план развития
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon5"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Обратная связь
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon6"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Остаток отпуска на конец года
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon7"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Удержание
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon8"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Лет в грейде
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon9"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Пересмотр зарплаты
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon10"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Получено благодарностей
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon11"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Получено наград
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="teamleader-area-table__user teamleader-area-table__user_fired">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td class="_red">6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div
+                                                    class="teamleader-area-table__user teamleader-area-table__user_vacation">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="_red">3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td class="_red">
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon13"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги редактируются сотрудником
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td class="_orange">02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td class="_red">
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon14"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги на согласовании
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td class="_red">6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="teamleader-area-table__user">
+                                                    <div class="teamleader-area-table__photo">
+                                                        <picture><source srcset="img/table/photo.webp" type="image/webp"><img src="img/table/photo.png" alt="Photo"></picture>
+                                                    </div>
+                                                    <div class="teamleader-area-table__details">
+                                                        <div class="teamleader-area-table__name">Михаил Сергеев</div>
+                                                        <div class="teamleader-area-table__extra">Associate -
+                                                            Санкт-Петербург</div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>3 дн.</td>
+                                            <td>88% / 86%</td>
+                                            <td>33 / 35</td>
+                                            <td>
+                                                <div class="teamleader-area-table__help">
+                                                    <div class="teamleader-area-table__icon">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#icon12"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="teamleader-area-table__desc">
+                                                        Итоги согласованы
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>90%</td>
+                                            <td>-4 дн.</td>
+                                            <td>-</td>
+                                            <td>02.03.2024</td>
+                                            <td>6</td>
+                                            <td>12</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="teamleader-area__sidebar teamleader-area-sidebar">
+                            <h2 class="teamleader-area-sidebar__title">Полезная информация</h2>
+                            <div class="teamleader-area-sidebar__body">
+                                <div class="teamleader-area-sidebar__lists">
+                                    <ul class="teamleader-area-sidebar__list">
+                                        <li class="teamleader-area-sidebar__item teamleader-area-sidebar__item_orange">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                        <li class="teamleader-area-sidebar__item">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="teamleader-area-sidebar__list teamleader-area-sidebar__list_hidden">
+                                        <li class="teamleader-area-sidebar__item">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                        <li class="teamleader-area-sidebar__item">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                        <li class="teamleader-area-sidebar__item">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                        <li class="teamleader-area-sidebar__item">
+                                            <div class="teamleader-area-sidebar__icon">
+                                                <img src="img/sidebar/icon1.svg" alt="Icon">
+                                            </div>
+                                            <div class="teamleader-area-sidebar__info">
+                                                <div class="teamleader-area-sidebar__name">Михаил Сергеев</div>
+                                                <div class="teamleader-area-sidebar__date">Сегодня</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button type="button" class="teamleader-area-sidebar__more">
+                                    <span>Показать все</span>
+                                    <span>Скрыть</span>
+                                    <svg>
+                                        <use href="img/icons/icons.svg#arrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="teamleader-area-sidebar__events">
+                                    <li class="teamleader-area-sidebar__event teamleader-area-sidebar__event_orange"
+                                        data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon2.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Митап по теме текучести</div>
+                                            <div class="teamleader-area-sidebar__date">Сегодня 13:30</div>
+                                        </div>
+                                    </li>
+                                    <li class="teamleader-area-sidebar__event" data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon3.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Подведение итогов за первое
+                                                полугодие
+                                            </div>
+                                            <div class="teamleader-area-sidebar__date">03.04.2025 13:30</div>
+                                        </div>
+                                    </li>
+                                    <li class="teamleader-area-sidebar__event" data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon4.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Последний день заполнения графика
+                                                отпусков</div>
+                                            <div class="teamleader-area-sidebar__date">03.04.2025 13:30</div>
+                                        </div>
+                                    </li>
+                                    <li class="teamleader-area-sidebar__event" data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon2.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Митап по теме текучести</div>
+                                            <div class="teamleader-area-sidebar__date">Сегодня 13:30</div>
+                                        </div>
+                                    </li>
+                                    <li class="teamleader-area-sidebar__event" data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon3.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Подведение итогов за первое
+                                                полугодие
+                                            </div>
+                                            <div class="teamleader-area-sidebar__date">03.04.2025 13:30</div>
+                                        </div>
+                                    </li>
+                                    <li class="teamleader-area-sidebar__event" data-modal="event">
+                                        <div class="teamleader-area-sidebar__icon">
+                                            <img src="img/sidebar/icon4.svg" alt="Icon">
+                                        </div>
+                                        <div class="teamleader-area-sidebar__info">
+                                            <div class="teamleader-area-sidebar__name">Последний день заполнения графика
+                                                отпусков</div>
+                                            <div class="teamleader-area-sidebar__date">03.04.2025 13:30</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal" id="table">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Заполнение табеля</h2>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p>
+                    Сумма дней, прошедших с даты послего заполнения табеля рабочего времени в ELMA.<br>
+                    Дата последнего заполнения табеля в ELMA должна быть ранее текущего месяца или ранее текущего
+                    понедельника. <br>
+                    Подробности в <a href="#">дашборде</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="util">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Утилизация</h2>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p>
+                    Факт по утилизации должен быть на уровне или выше цели (таргета). Утилизация = часы из ELMA с
+                    последнего
+                    1 июля по вчерашний календарный день/стандартные часы.
+                </p>
+                <p>
+                    Подробный <a href="#">дашборд</a> с анализом часов сотрудников. <br>
+                    Планируемая <a href="#">загрузка</a> сотрудников.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="rest">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Остаток отпуска</h2>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p>
+                    Ожидается, что сотрудники своевременно проходят обязательно назначенные курсы или записываются на
+                    обязательные тренинги.
+                </p>
+                <p>
+                    Если все обязательные элементы обучения пройдены и запланированы сотрудником, то
+                    показатель покрашен зеленым цветом. При успешном прохождении/планировании половины и более таких
+                    элементов - желтым, если менее половины - красным.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="targets">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Цели и план развития</h2>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p>
+                    Сотрудники должны обсуждать и согласовывать свои цели в разделе <a href="#">Цели и план развития</a>
+                    в течение
+                    установленного периода. Все новые сотрудники должны согласовать цели в течение 2 месяцев с даты
+                    назначения целей при приеме на работу.
+                </p>
+                <p>
+                    Если цели были назначены, но сотрудник не приступал к
+                    редактированию, или находятся у тебя на согласовании, то показатель покрашен красным. Если цели у
+                    сотрудника или у тебя на редактировании - желтым. Если цели согласованы, то параметр покрашен в
+                    зеленый
+                    цвет.
+                </p>
+                <p>
+                    Аналогичная логика индикации предусмотрена на этапе подведения итогов: сотрудник и ты не
+                    приступали к редактированию итогов - красный, итоги на редактировании - желтый, итоги тобой
+                    согласованы
+                    - зеленый.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="feedback">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 class="modal__title">Обратная связь</h2>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal__body">
+                <p>
+                    У всех сотрудников от практиканта до директора есть KPI по сбору и предоставлению обратной связи на
+                    работу на различных проектах, включая клиентские и неклиентские в разделе Обратная связь
+                    https://compass.tedo.ru/feed.
+                </p>
+                <p>
+                    Общефирменная рекомендация - получить отзывы от всех людей, с которыми
+                    сотрудник работал на разных проектах и покрыть 75% и более от всего отработанного времени в течение
+                    финансового года.
+                </p>
+                <p>
+                    Если покрыто 75% рабочего времени и более, то параметр закрашен зеленым, если
+                    50-74,9%, то желтым, а если до 50%, то красным.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="event">
+    <div class="modal__wrapper">
+        <div class="modal__content">
+            <div class="modal__header">
+                <div class="modal__categories">
+                    <div class="modal__category">Командообразование</div>
+                    <div class="modal__category">Вебинар</div>
+                </div>
+                <button type="button" class="modal__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <h2 class="modal__title">Митап по удержанию сотрудников — как сохранить ценные кадры</h2>
+            <time datetime="2025-04-27" class="modal__date">27.04.2025 09:30-12:00</time>
+            <div class="modal__body">
+                <p>
+                    Обсудим эффективные стратегии мотивации, развития и вовлеченности команды. Узнайте, как создать
+                    комфортную рабочую среду и снизить текучку.
+                </p>
+                <p>
+                    Практические кейсы от HR-экспертов и успешных руководителей. Живое общение, ответы на вопросы и
+                    полезные инсайты. Присоединяйтесь, чтобы укрепить команду и повысить лояльность сотрудников!
+                </p>
+                <picture><source srcset="img/modal/image.webp" type="image/webp"><img src="img/modal/image.png" alt="Image"></picture>
+            </div>
+            <a href="#" class="modal__link">Ссылка для участников</a>
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.min.js?_v=20250502113249"></script>
+</body>
+
+</html>
