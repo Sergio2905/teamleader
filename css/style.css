@@ -657,7 +657,8 @@ body._lock {
 }
 
 .teamleader-area-table__body {
-  margin-top: 8px;
+  padding-top: 100px;
+  margin-top: -92px;
   max-height: 80vh;
   overflow-y: auto;
   scrollbar-width: thin;
